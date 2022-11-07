@@ -12,7 +12,7 @@ function LoginPage() {
           />
         </S.WrapperImage>
         <S.WrapperForm>
-          <S.Title>BEM VINDO(A)!</S.Title>
+          <S.Title data-testid='a'>BEM VINDO(A)!</S.Title>
           <S.SubTitle>Explore os assuntos do momento + esportes!</S.SubTitle>
         </S.WrapperForm>
       </S.Wrapper>
