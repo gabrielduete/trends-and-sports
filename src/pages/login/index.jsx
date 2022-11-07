@@ -1,5 +1,6 @@
 import React from 'react'
 import * as S from './styles'
+import Input from './components/Buttons/Inputs/Input'
 
 function LoginPage() {
   return (
@@ -12,8 +13,20 @@ function LoginPage() {
           />
         </S.WrapperImage>
         <S.WrapperForm>
-          <S.Title data-testid='a'>BEM VINDO(A)!</S.Title>
-          <S.SubTitle>Explore os assuntos do momento + esportes!</S.SubTitle>
+          <div>
+            <S.Title>BEM VINDO(A)!</S.Title>
+            <S.SubTitle>Explore os assuntos do momento + esportes!</S.SubTitle>
+          </div>
+          <Input
+            type='text'
+            placeholder='Digite seu nome'
+            onChange={() => {}}
+          />
+          <Input
+            type='file'
+            placeholder='Digite seu nome'
+            onChange={() => {}}
+          />
         </S.WrapperForm>
       </S.Wrapper>
     </S.Container>

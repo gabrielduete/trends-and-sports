@@ -31,6 +31,7 @@ export const WrapperForm = styled.div`
   width: 50%;
   background-color: #03376f;
   padding: 100px;
+  gap: 25px;
 `
 
 export const Title = styled.h1`
