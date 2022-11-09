@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react'
 
 import PropTypes from 'prop-types'
@@ -15,10 +14,9 @@ function Input({ placeholder, type, onChange }) {
             id='files'
             accept='image/png, image/jpeg, image/jpg'
             type={type}
-            placeholder={placeholder}
             onChange={() => onChange}
           />
-          <S.Wrapperlabel htmlFor='files'>Envie uma foto</S.Wrapperlabel>
+          <S.Wrapperlabel htmlFor='files'>{placeholder}</S.Wrapperlabel>
         </>
       ) : (
         <S.Input

@@ -1,6 +1,7 @@
 import React from 'react'
 import * as S from './styles'
 import Input from './components/Buttons/Inputs/Input'
+import ButtonExplorer from './components/Buttons/Button'
 
 function LoginPage() {
   return (
@@ -22,11 +23,8 @@ function LoginPage() {
             placeholder='Digite seu nome'
             onChange={() => {}}
           />
-          <Input
-            type='file'
-            placeholder='Digite seu nome'
-            onChange={() => {}}
-          />
+          <Input type='file' placeholder='Envie uma foto' onChange={() => {}} />
+          <ButtonExplorer type='submit' text='EXPLORAR' onClick={() => {}} />
         </S.WrapperForm>
       </S.Wrapper>
     </S.Container>
