@@ -18,13 +18,19 @@ function LoginPage() {
             <S.Title>BEM VINDO(A)!</S.Title>
             <S.SubTitle>Explore os assuntos do momento + esportes!</S.SubTitle>
           </div>
-          <Input
-            type='text'
-            placeholder='Digite seu nome'
-            onChange={() => {}}
-          />
-          <Input type='file' placeholder='Envie uma foto' onChange={() => {}} />
-          <ButtonExplorer type='submit' text='EXPLORAR' onClick={() => {}} />
+          <S.WrapperButtons>
+            <Input
+              type='text'
+              placeholder='Digite seu nome'
+              onChange={() => {}}
+            />
+            <Input
+              type='file'
+              placeholder='Envie uma foto'
+              onChange={() => {}}
+            />
+            <ButtonExplorer type='submit' text='EXPLORAR' onClick={() => {}} />
+          </S.WrapperButtons>
         </S.WrapperForm>
       </S.Wrapper>
     </S.Container>

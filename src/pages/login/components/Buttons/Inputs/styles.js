@@ -5,14 +5,14 @@ export const Wrapper = styled.div`
 `
 
 export const Input = styled.input`
-  width: 98%;
+  width: 100%;
   outline: none;
   height: 30px;
   border-radius: 3px;
   border: none;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
   border-radius: 3px;
-  padding-left: 10px;
+  text-indent: 10px;
   font-size: 0.8em;
 `
 
