@@ -68,3 +68,10 @@ export const WrapperButtons = styled.div`
   flex-direction: column;
   gap: 20px;
 `
+
+export const Link = styled.a`
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+  align-self: center;
+  font-size: 0.8em;
+`

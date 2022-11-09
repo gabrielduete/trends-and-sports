@@ -32,4 +32,10 @@ export const Wrapperlabel = styled.label`
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
   cursor: pointer;
   font-size: 13px;
+  transition: 0.4s;
+  transition-duration: 0.6s;
+
+  &:active {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
 `

@@ -30,6 +30,8 @@ function LoginPage() {
               onChange={() => {}}
             />
             <ButtonExplorer type='submit' text='EXPLORAR' onClick={() => {}} />
+            {/* TODO: CHANGE HREF WITH COPNFIGURATION ROUTES */}
+            <S.Link href='./'>Entrar sem perfil</S.Link>
           </S.WrapperButtons>
         </S.WrapperForm>
       </S.Wrapper>
