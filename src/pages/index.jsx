@@ -1,5 +1,7 @@
-function App() {
-  return <section className="App" />
+import Layout from "./home/components/Layout";
+
+
+export default function App() {
+ return <Layout></Layout>
 }
 
-export default App
