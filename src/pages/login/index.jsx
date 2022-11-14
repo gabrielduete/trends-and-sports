@@ -1,7 +1,7 @@
 import React from 'react'
 import * as S from './styles'
-import Input from './components/Buttons/Inputs/Input'
-import ButtonExplorer from './components/Buttons/Button'
+import Input from './components/Inputs/index'
+import ButtonExplorer from './components/Button'
 
 function LoginPage() {
   return (
