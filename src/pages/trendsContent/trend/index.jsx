@@ -7,7 +7,7 @@ function Trend({ name, url, tweetVolume }) {
     <S.Wrapper onClick={() => window.open(`${url}`, '_blank')}>
       <S.Name>{name}</S.Name>
       <S.TextVolume>{tweetVolume?.toPrecision()} Tweets</S.TextVolume>
-      <S.TextSee>Ver no twitter</S.TextSee>
+      <S.TextSee>Clique para ver no twitter</S.TextSee>
     </S.Wrapper>
   )
 }

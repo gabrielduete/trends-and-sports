@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
-  cursor: pointer;
   padding: 20px 20px;
 
   &&:hover {
@@ -15,18 +14,26 @@ export const Name = styled.h1`
   font-weight: 600;
 `
 
-export const TextSee = styled.p`
-  font-size: 0.7em;
+export const Score = styled.p`
+  font-size: 0.9em;
+  color: #535559;
+  border-style: none;
+  margin-top: 2px;
+  text-decoration: none;
+`
+
+export const Date = styled.p`
+  font-size: 0.9em;
   color: #535559;
   border-style: none;
   text-decoration: none;
   margin-top: 8px;
 `
 
-export const TextVolume = styled.p`
-  font-size: 0.9em;
+export const Status = styled.p`
+  font-size: 0.8em;
   color: #535559;
   border-style: none;
-  margin-top: 2px;
   text-decoration: none;
+  margin-top: 8px;
 `
