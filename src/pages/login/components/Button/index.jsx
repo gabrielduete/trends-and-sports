@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 
 import CustomButton from './styles'
 
-function Button({ type, text, onClick }) {
+function Button({ type, text, redirectUrl }) {
   return (
-    <CustomButton type={type} onClick={() => onClick}>
+    <CustomButton type={type} to={redirectUrl}>
       {text}
     </CustomButton>
   )
@@ -14,7 +14,7 @@ function Button({ type, text, onClick }) {
 Button.propTypes = {
   type: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired,
+  redirectUrl: PropTypes.func.isRequired,
 }
 
 export default Button
