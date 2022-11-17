@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 export const Container = styled.section`
   display: flex;
@@ -69,7 +70,7 @@ export const WrapperButtons = styled.div`
   gap: 20px;
 `
 
-export const Link = styled.a`
+export const LinkHome = styled(Link)`
   text-decoration: none;
   color: rgba(255, 255, 255, 0.9);
   align-self: center;

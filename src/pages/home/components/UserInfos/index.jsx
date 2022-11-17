@@ -4,11 +4,13 @@ import PropTypes from 'prop-types'
 
 import * as S from './styles'
 
-function UserInfos({ name = '', photo }) {
+function UserInfos({ name, photo }) {
+  const isValidName = name !== undefined
+
   return (
     <section>
       <S.Photo src={photo} />
-      <S.Text>Olá, {name}!</S.Text>
+      <S.Text>Olá{isValidName && `, ${name}`}!</S.Text>
     </section>
   )
 }

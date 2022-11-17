@@ -1,9 +1,10 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import * as S from './styles'
 import Input from './components/Inputs/index'
 import ButtonExplorer from './components/Button'
 
-function LoginPage() {
+function LoginPage({ setUserName }) {
   return (
     <S.Container>
       <S.Wrapper>
@@ -22,16 +23,16 @@ function LoginPage() {
             <Input
               type='text'
               placeholder='Digite seu nome'
-              onChange={() => {}}
+              onChange={setUserName}
             />
-            <Input
+            {/* <Input
               type='file'
               placeholder='Envie uma foto'
               onChange={() => {}}
-            />
-            <ButtonExplorer type='submit' text='EXPLORAR' onClick={() => {}} />
+            /> */}
+            <ButtonExplorer type='submit' text='EXPLORAR' redirectUrl='/home' />
             {/* TODO: CHANGE HREF WITH COPNFIGURATION ROUTES */}
-            <S.Link href='./'>Entrar sem perfil</S.Link>
+            <S.LinkHome to='/home'>Entrar sem perfil</S.LinkHome>
           </S.WrapperButtons>
         </S.WrapperForm>
       </S.Wrapper>
@@ -40,3 +41,7 @@ function LoginPage() {
 }
 
 export default LoginPage
+
+LoginPage.propTypes = {
+  setUserName: PropTypes.node.isRequired,
+}

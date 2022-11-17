@@ -14,15 +14,16 @@ function Input({ placeholder, type, onChange }) {
             id='files'
             accept='image/png, image/jpeg, image/jpg'
             type={type}
-            onChange={() => onChange}
+            // onChange={() => onChange}
           />
           <S.Wrapperlabel htmlFor='files'>{placeholder}</S.Wrapperlabel>
         </>
       ) : (
         <S.Input
           type={type}
-          onChange={() => onChange}
+          onChange={e => onChange(e.target.value)}
           placeholder={placeholder}
+          required
         />
       )}
     </S.Wrapper>

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 export const Container = styled.section`
   width: 100%;
@@ -15,12 +16,13 @@ export const ContentTexts = styled.div`
   gap: 10px;
 `
 
-export const TitleSection = styled.h1`
+export const Button = styled(Link)`
   font-size: 1.2em;
   font-weight: 100;
   cursor: pointer;
   color: #71767b;
   display: inline-block;
+  text-decoration: none;
   transition-property: transform;
   transition: 0.25s ease;
 
