@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import { getData } from '../../services/twitter/index'
-import Trend from './trend'
+import Trend from './components/trend'
 import Container from '../../components/Container'
 
 function TrendsContent() {
@@ -18,7 +18,6 @@ function TrendsContent() {
 
   return (
     <Container
-      title='Assuntos do momento'
       content={
         <section>
           {trends?.map(trend => (

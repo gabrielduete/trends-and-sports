@@ -19,7 +19,6 @@ function EsportsContent() {
 
   return (
     <Container
-      title='Esportes'
       content={
         <section>
           {camps?.map(camp => (
