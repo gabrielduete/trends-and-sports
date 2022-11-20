@@ -4,7 +4,7 @@ import * as S from './styles'
 
 function Trend({ name, url, tweetVolume }) {
   return (
-    <S.Wrapper onClick={() => window.open(`${url}`, '_blank')}>
+    <S.Wrapper onClick={() => window.open(url, '_blank')}>
       <S.Name>{name}</S.Name>
       <S.TextVolume>{tweetVolume?.toPrecision()} Tweets</S.TextVolume>
       <S.TextSee>Clique para ver no twitter</S.TextSee>

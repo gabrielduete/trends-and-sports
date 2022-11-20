@@ -1,30 +1,20 @@
-import React, { useState } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import * as S from './styles'
 
 function Container({ content }) {
   const currentPath = window.location.pathname
 
-  const [isTrends, setIsTrends] = useState(currentPath)
-
-  const validatePath = isTrends === '/trends'
+  const isTrends = currentPath === '/trends'
 
   return (
     <S.Container>
       <S.Wrapper>
         <S.WrapperTexts>
-          <S.Title
-            to='/trends'
-            onClick={() => setIsTrends(currentPath)}
-            isTrends={validatePath}
-          >
+          <S.Title to='/trends' isTrends={isTrends}>
             Assuntos do momento
           </S.Title>
-          <S.Title
-            to='/esportes'
-            onClick={() => setIsTrends(currentPath)}
-            isTrends={!validatePath}
-          >
+          <S.Title to='/esportes' isTrends={!isTrends}>
             Esportes
           </S.Title>
         </S.WrapperTexts>
