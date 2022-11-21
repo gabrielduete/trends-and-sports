@@ -17,12 +17,16 @@ export const ContentTexts = styled.div`
 `
 
 export const WrapperInfo = styled.div`
-  max-width: 450px;
+  max-width: 410px;
 
   h1 {
     color: #dbdbdb;
     font-size: 1.2em;
     margin-bottom: 20px;
+  }
+
+  @media (max-width: 450px) {
+    max-width: 250px;
   }
 `
 
