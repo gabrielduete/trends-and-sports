@@ -2,12 +2,21 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import * as S from './styles'
 
-function Container({ title, content }) {
+function Container({ content }) {
+  const currentPath = window.location.pathname
+
+  const isTrends = currentPath === '/trends'
+
   return (
     <S.Container>
       <S.Wrapper>
         <S.WrapperTexts>
-          <S.Title>{title}</S.Title>
+          <S.Title to='/trends' isTrends={isTrends}>
+            Assuntos do momento
+          </S.Title>
+          <S.Title to='/esportes' isTrends={!isTrends}>
+            Esportes
+          </S.Title>
         </S.WrapperTexts>
         {content}
       </S.Wrapper>
@@ -18,6 +27,5 @@ function Container({ title, content }) {
 export default Container
 
 Container.propTypes = {
-  title: PropTypes.string.isRequired,
   content: PropTypes.node.isRequired,
 }

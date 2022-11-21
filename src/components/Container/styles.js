@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 export const Container = styled.section`
   width: 100%;
@@ -18,12 +19,14 @@ export const WrapperTexts = styled.div`
   display: flex;
 `
 
-export const Title = styled.h1`
+export const Title = styled(Link)`
   font-weight: 100;
   border-bottom: 2px solid #0061ca;
   padding: 20px;
-  margin: 0px 200px;
+  margin: 0px 80px;
   text-align: center;
+  color: ${({ isTrends }) => (isTrends ? '#ffff' : '#535559')};
+  text-decoration: none;
   cursor: pointer;
   font-size: 1.3em;
 

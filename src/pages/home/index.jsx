@@ -8,6 +8,13 @@ function Home({ name }) {
     <S.Container>
       <S.ContentTexts>
         <UserInfos name={name} />
+        <S.WrapperInfo>
+          <h1>
+            Aqui você encontra os assuntos do momento do twitter e notícias
+            atuais de esportes!
+          </h1>
+          <p>Deseja ver:</p>
+        </S.WrapperInfo>
         <S.Button to='/trends'>Assuntos do momento</S.Button>
         <S.Button to='/esportes'>Esportes</S.Button>
       </S.ContentTexts>

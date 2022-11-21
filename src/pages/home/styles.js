@@ -16,6 +16,20 @@ export const ContentTexts = styled.div`
   gap: 10px;
 `
 
+export const WrapperInfo = styled.div`
+  max-width: 410px;
+
+  h1 {
+    color: #dbdbdb;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 450px) {
+    max-width: 250px;
+  }
+`
+
 export const Button = styled(Link)`
   font-size: 1.2em;
   font-weight: 100;
