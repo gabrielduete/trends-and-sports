@@ -22,7 +22,7 @@ export const WrapperInfo = styled.div`
   h1 {
     color: #dbdbdb;
     font-size: 1.2em;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   @media (max-width: 450px) {

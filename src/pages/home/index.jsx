@@ -13,7 +13,7 @@ function Home({ name }) {
             Aqui você encontra os assuntos do momento do twitter e notícias
             atuais de esportes!
           </h1>
-          <p>Deseja ver:</p>
+          <p>Veja:</p>
         </S.WrapperInfo>
         <S.Button to='/trends'>Assuntos do momento</S.Button>
         <S.Button to='/esportes'>Esportes</S.Button>
