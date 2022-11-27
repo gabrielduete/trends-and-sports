@@ -9,10 +9,7 @@ function Home({ name }) {
       <S.ContentTexts>
         <UserInfos name={name} />
         <S.WrapperInfo>
-          <h1>
-            Aqui você encontra os assuntos do momento do twitter e notícias
-            atuais de esportes!
-          </h1>
+          <h1>Explore os assuntos do momento e notícias de esportes!</h1>
           <p>Veja:</p>
         </S.WrapperInfo>
         <S.Button to='/trends'>Assuntos do momento</S.Button>

@@ -25,13 +25,7 @@ function LoginPage({ setUserName }) {
               placeholder='Digite seu nome'
               onChange={setUserName}
             />
-            {/* <Input
-              type='file'
-              placeholder='Envie uma foto'
-              onChange={() => {}}
-            /> */}
             <ButtonExplorer type='submit' text='EXPLORAR' redirectUrl='/home' />
-            {/* TODO: CHANGE HREF WITH COPNFIGURATION ROUTES */}
             <S.LinkHome to='/home'>Entrar sem perfil</S.LinkHome>
           </S.WrapperButtons>
         </S.WrapperForm>

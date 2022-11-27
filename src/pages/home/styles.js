@@ -17,7 +17,7 @@ export const ContentTexts = styled.div`
 `
 
 export const WrapperInfo = styled.div`
-  max-width: 410px;
+  max-width: 320px;
 
   h1 {
     color: #dbdbdb;
