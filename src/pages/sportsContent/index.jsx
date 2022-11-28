@@ -6,7 +6,7 @@ import SpinnerLoading from '../../components/SpinnerLoading'
 
 import Container from '../../components/Container'
 
-function EsportsContent() {
+function SportsContent() {
   const [camps, setCamps] = useState()
   const [isLoading, setIsLoading] = useState(true)
 
@@ -52,4 +52,4 @@ function EsportsContent() {
   )
 }
 
-export default EsportsContent
+export default SportsContent
