@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import { getData } from '../../services/twitter/index'
-import Trend from './components/trend'
+import Trend from './components/Trend'
 import Container from '../../components/Container'
 import SpinnerLoading from '../../components/SpinnerLoading'
 import WrapperSpinner from './styles'
