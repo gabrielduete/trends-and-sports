@@ -4,7 +4,11 @@ import * as S from './styles'
 import Input from './components/Inputs/index'
 import ButtonExplorer from './components/Button'
 
-function LoginPage({ setUserName }) {
+function LoginPage({ name, setUserName }) {
+  const haveSpace = name?.indexOf(' ') >= 0
+
+  const isInvalidName = name === '' || name === undefined || haveSpace
+
   return (
     <S.Container>
       <S.Wrapper>
@@ -22,10 +26,20 @@ function LoginPage({ setUserName }) {
           <S.WrapperButtons>
             <Input
               type='text'
-              placeholder='Digite seu nome'
+              placeholder='Digite seu primeiro nome ou apelido'
               onChange={setUserName}
             />
-            <ButtonExplorer type='submit' text='EXPLORAR' redirectUrl='/home' />
+            {haveSpace && (
+              <S.MessageInvalidName>
+                Apenas seu primeiro nome ou apelido! Sem espaços!
+              </S.MessageInvalidName>
+            )}
+            <ButtonExplorer
+              type='submit'
+              text='EXPLORAR'
+              redirectUrl='/home'
+              disabled={isInvalidName}
+            />
             <S.LinkHome to='/home'>Entrar sem perfil</S.LinkHome>
           </S.WrapperButtons>
         </S.WrapperForm>
@@ -37,5 +51,6 @@ function LoginPage({ setUserName }) {
 export default LoginPage
 
 LoginPage.propTypes = {
+  name: PropTypes.string.isRequired,
   setUserName: PropTypes.node.isRequired,
 }

@@ -16,7 +16,7 @@ function App() {
         <Route
           exact
           path='/'
-          element={<LoginPage setUserName={setUserName} />}
+          element={<LoginPage name={userName} setUserName={setUserName} />}
         />
         <Route exact path='/home' element={<Home name={userName} />} />
         <Route exact path='/trends' element={<TrendsContent />} />
