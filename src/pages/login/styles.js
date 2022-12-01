@@ -75,4 +75,12 @@ export const LinkHome = styled(Link)`
   color: rgba(255, 255, 255, 0.9);
   align-self: center;
   font-size: 0.8em;
+
+  *:disabled {
+    color: red;
+  }
+`
+
+export const MessageInvalidName = styled.p`
+  font-size: 13px;
 `

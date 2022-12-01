@@ -2,9 +2,9 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 const CustomButton = styled(Link)`
-  background-color: #0061ca;
+  background-color: ${({ disabled }) => (disabled ? '#c3c3c3' : '#0061ca')};
   color: #ffffff;
-  cursor: pointer;
+  cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
   border: none;
   outline: none;
   text-decoration: none;
@@ -18,8 +18,8 @@ const CustomButton = styled(Link)`
   font-size: 0.8em;
 
   &:hover {
-    background-color: #ffffff;
-    color: #0061ca;
+    background-color: ${({ disabled }) => !disabled && '#ffffff'};
+    color: ${({ disabled }) => !disabled && '#0061ca'};
   }
 `
 
